@@ -39,7 +39,7 @@ s2.col<-colSums(resid.col2)/(n-2)
 SSR.rcol<-colSums((Yhat.col)^2)
 F<-SSR.rcol/s2.col
 
-plot(density(F, adjust = 0.4, from = 0), ylim = c(0,5), xlim = c(-1,20))
+plot(density(F, adjust = 0.4, from = 0), ylim = c(0,5), xlim = c(0.05,20))
 
 test.lm<-lm(Y[,1]~x)
 
